@@ -48,6 +48,7 @@ void avdevice_register_all(void)
     REGISTER_OUTDEV   (SDL, sdl);
     REGISTER_INOUTDEV (SNDIO, sndio);
     REGISTER_INDEV    (V4L2, v4l2);
+#undef FF_API_V4L
 #if FF_API_V4L
     REGISTER_INDEV    (V4L, v4l);
 #endif

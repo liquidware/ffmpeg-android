@@ -21,6 +21,7 @@
 
 #include "avdevice.h"
 
+#undef FF_API_V4L
 #if FF_API_V4L
 
 #undef __STRICT_ANSI__ //workaround due to broken kernel headers
